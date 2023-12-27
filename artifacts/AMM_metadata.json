@@ -1,0 +1,342 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amountToken1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amountToken2",
+						"type": "uint256"
+					}
+				],
+				"name": "faucet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amountToken2",
+						"type": "uint256"
+					}
+				],
+				"name": "getEquivalentToken1Estimate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "reqToken1",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amountToken1",
+						"type": "uint256"
+					}
+				],
+				"name": "getEquivalentToken2Estimate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "reqToken2",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMyHoldings",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountToken1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountToken2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "myShare",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPoolDetails",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amountToken1",
+						"type": "uint256"
+					}
+				],
+				"name": "getSwapToken1Estimate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountToken2",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amountToken2",
+						"type": "uint256"
+					}
+				],
+				"name": "getSwapToken1EstimateGivenToken2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountToken1",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amountToken2",
+						"type": "uint256"
+					}
+				],
+				"name": "getSwapToken2Estimate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountToken1",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amountToken1",
+						"type": "uint256"
+					}
+				],
+				"name": "getSwapToken2EstimateGivenToken1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountToken2",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_share",
+						"type": "uint256"
+					}
+				],
+				"name": "getWithdrawEstimate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountToken1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountToken2",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amountToken1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amountToken2",
+						"type": "uint256"
+					}
+				],
+				"name": "provide",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "share",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amountToken1",
+						"type": "uint256"
+					}
+				],
+				"name": "swapToken1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountToken2",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amountToken2",
+						"type": "uint256"
+					}
+				],
+				"name": "swapToken2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountToken1",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_share",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountToken1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountToken2",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"AMM.sol": "AMM"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/utils/math/SafeMath.sol": {
+			"keccak256": "0x58b21219689909c4f8339af00813760337f7e2e7f169a97fe49e2896dcfb3b9a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ef8e012e946dec20e59f2d4446f4b44bb098f3fa8bac103b1b5112fff777447b",
+				"dweb:/ipfs/QmVTooKWcLkJ9W68yNX4MgdrbAKiAXwuRN9A7f4NkdcdtQ"
+			]
+		},
+		"AMM.sol": {
+			"keccak256": "0xd70a6c88906fa0230763f3172450670439082d1e5ecec231acc0211c9b90d9bd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1b3cbea2a08f6028ce11cc2b415a40d729bc4e346d23bf1453ef04dfaa0f6ef4",
+				"dweb:/ipfs/Qmak4YuesdgY8mG9kL4Y7dWpbn5k1yziQ1RLBeZrd3D4Qk"
+			]
+		}
+	},
+	"version": 1
+}
